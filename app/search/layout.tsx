@@ -1,6 +1,5 @@
 import React from "react";
-import Search from "./page";
-// import Search from "./Search";
+import Search from "./Search";
 
 function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
