@@ -6,7 +6,10 @@ type PageProps = {
 	};
 };
 
-function SearchResults() {
+const search = async (searchterm: string) => {};
+
+function SearchResults({ params: { searchTerm } }: PageProps) {
+	const searchResults = await search(searchTerm);
 	return <div>SearchResults</div>;
 }
 
