@@ -31,7 +31,7 @@ async function SearchResults({ params: { searchTerm } }: PageProps) {
 
 	return (
 		<div>
-			<p className="text-sm text-gray-500">You searched for: {searchResults}</p>
+			<p className="text-sm text-gray-500">You searched for: {searchTerm}</p>
 			<ol className="p-5 space-y-5">
 				{searchResults.organic_results.map((result) => (
 					<li key={result.position} className="list-decimal">
