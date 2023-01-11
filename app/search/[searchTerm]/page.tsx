@@ -5,6 +5,17 @@ type PageProps = {
 		searchTerm: string;
 	};
 };
+type SearchResult = {
+	organic_results: [
+		{
+			position: number;
+			title: string;
+			link: string;
+			thumbnail: string;
+			snippet: string;
+		}
+	];
+};
 
 const search = async (searchTerm: string) => {
 	const res = await fetch(
