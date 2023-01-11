@@ -15,7 +15,7 @@ const search = async (searchTerm: string) => {
 	return data;
 };
 
-function SearchResults({ params: { searchTerm } }: PageProps) {
+async function SearchResults({ params: { searchTerm } }: PageProps) {
 	const searchResults = await search(searchTerm);
 	return <div>SearchResults</div>;
 }
