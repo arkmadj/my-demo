@@ -11,7 +11,23 @@ function Search() {
 		setSearch("");
 		router.push(`/search/${search}`);
 	};
-	return <div>I am a Search component</div>;
+
+	return (
+		<form onSubmit={handleSearch}>
+			<input
+				type="text"
+				value={search}
+				placeholder="Enter the search term"
+				onChange={(e) => setSearch(e.target.value)}
+			/>
+			<button
+				type="submit"
+				className="px-4 py-2 font-bold text-white bg-blue-500 rounded-lg"
+			>
+				Search
+			</button>
+		</form>
+	);
 }
 
 export default Search;
